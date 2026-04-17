@@ -1,0 +1,66 @@
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 120, 7)         │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ (None, 32)             │         5,120 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 1)              │            33 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 5,153 (20.13 KB)
+ Trainable params: 5,153 (20.13 KB)
+ Non-trainable params: 0 (0.00 B)
+
+Epoch 1/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 114ms/step - loss: 0.3424
+Epoch 1: val_loss improved from None to 0.14312, saving model to model_checkpoint.weights.h5
+
+Epoch 1: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 170s 143ms/step - loss: 0.1992 - val_loss: 0.1431
+Epoch 2/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 108ms/step - loss: 0.1381
+Epoch 2: val_loss improved from 0.14312 to 0.14134, saving model to model_checkpoint.weights.h5
+
+Epoch 2: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 156s 133ms/step - loss: 0.1245 - val_loss: 0.1413
+Epoch 3/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 109ms/step - loss: 0.1230
+Epoch 3: val_loss did not improve from 0.14134
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 157s 134ms/step - loss: 0.1144 - val_loss: 0.1494
+Epoch 4/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 109ms/step - loss: 0.1158
+Epoch 4: val_loss did not improve from 0.14134
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 159s 136ms/step - loss: 0.1094 - val_loss: 0.1524
+Epoch 5/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 108ms/step - loss: 0.1135
+Epoch 5: val_loss did not improve from 0.14134
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 156s 133ms/step - loss: 0.1069 - val_loss: 0.1454
+Epoch 6/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 109ms/step - loss: 0.1107
+Epoch 6: val_loss improved from 0.14134 to 0.13955, saving model to model_checkpoint.weights.h5
+
+Epoch 6: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 157s 134ms/step - loss: 0.1052 - val_loss: 0.1396
+Epoch 7/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 106ms/step - loss: 0.1082
+Epoch 7: val_loss improved from 0.13955 to 0.13661, saving model to model_checkpoint.weights.h5
+
+Epoch 7: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 157s 134ms/step - loss: 0.1032 - val_loss: 0.1366
+Epoch 8/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 107ms/step - loss: 0.1073
+Epoch 8: val_loss improved from 0.13661 to 0.13249, saving model to model_checkpoint.weights.h5
+
+Epoch 8: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 157s 134ms/step - loss: 0.1017 - val_loss: 0.1325
+Epoch 9/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 109ms/step - loss: 0.1053
+Epoch 9: val_loss improved from 0.13249 to 0.12661, saving model to model_checkpoint.weights.h5
+
+Epoch 9: finished saving model to model_checkpoint.weights.h5
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 159s 136ms/step - loss: 0.1004 - val_loss: 0.1266
+Epoch 10/10
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 0s 110ms/step - loss: 0.1045
+Epoch 10: val_loss did not improve from 0.12661
+1172/1172 ━━━━━━━━━━━━━━━━━━━━ 162s 138ms/step - loss: 0.1015 - val_loss: 0.1283

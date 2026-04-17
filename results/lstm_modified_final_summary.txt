@@ -1,0 +1,11 @@
+ Experiment                           Description  Best Val Loss (MSE) vs Baseline
+                        Baseline Single LSTM(32), no dropout, past=720             0.122696           —
+              Exp 1: Dropout=0.1        Dropout(0.1) after LSTM output             0.142252   +0.019557
+              Exp 1: Dropout=0.2        Dropout(0.2) after LSTM output             0.139744   +0.017048
+              Exp 1: Dropout=0.3        Dropout(0.3) after LSTM output             0.133902   +0.011206
+              Exp 1: Dropout=0.5        Dropout(0.5) after LSTM output             0.137704   +0.015008
+Exp 2: Stacked LSTM(32)→LSTM(32) Two stacked layers: LSTM(32)→LSTM(32)             0.132490   +0.009794
+Exp 2: Stacked LSTM(64)→LSTM(32) Two stacked layers: LSTM(64)→LSTM(32)             0.133303   +0.010607
+                 Exp 3: past=360              360 steps (60h lookback)             0.121850   -0.000846
+                 Exp 3: past=720  720 steps (120h lookback) (baseline)             0.131121           —
+                Exp 3: past=1440            1440 steps (240h lookback)             0.131232   +0.008536
