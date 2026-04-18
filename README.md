@@ -17,14 +17,13 @@ lstm-transformer-timeseries/
 │   ├── 01_lstm_baseline.ipynb           # Keras LSTM example, reproduced as-is
 │   ├── 02_transformer_baseline.ipynb    # Keras Transformer example, reproduced as-is
 │   ├── 03_lstm_modification.ipynb       # All three LSTM experiments
-│   └── 04_comparison_and_plots.ipynb    # Side-by-side result visualizations
 │
-├── results/
-│   ├── baseline_lstm_results.txt
-│   ├── baseline_transformer_results.txt
-│   └── lstm_improvements_results.csv
-│
-└── requirements.txt
+└── results/
+    ├── lstm_baseline/
+    ├── lstm_modified/
+    ├── transformer_baseline/
+    └── lstm_modified_final_summary.txt
+
 ```
 
 ---
