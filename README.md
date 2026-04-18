@@ -212,9 +212,8 @@ The best single modification was **reducing the lookback window from 120 hours t
 
 The LSTM model is significantly easier to understand. Its architecture is minimal — a single recurrent layer feeding a linear output — and its operation maps intuitively onto the problem: given the last N hours of weather readings, predict the temperature 12 hours from now. The data pipeline, training loop, and evaluation metric (MSE) are all straightforward.
 
-The Transformer is conceptually harder to follow. Multi-head self-attention requires understanding query/key/value projections and how attention scores are computed across all pairs of timesteps simultaneously. The Pre-LN residual structure, the pointwise Conv1D feed-forward sub-layers, and the way global average pooling collapses the sequence for classification all require more background to reason about. That said, once the attention mechanism clicks, the Transformer's advantage over LSTMs on long sequences — every timestep can directly attend to every other, with no vanishing gradient issue — becomes intuitive.
+The Transformer is conceptually harder to follow. Multi-head self-attention requires understanding query/key/value projections and how attention scores are computed across all pairs of timesteps simultaneously. The Pre-LN residual structure, the pointwise Conv1D feed-forward sub-layers, and the way global average pooling collapses the sequence for classification all require more background to reason about. That said, once the attention mechanism is understood, the Transformer's advantage over LSTMs on long sequences — every timestep can directly attend to every other, with no vanishing gradient issue — becomes intuitive.
 
-For someone new to deep learning, LSTM is the right starting point. For long-sequence problems where information must be preserved over many hundreds of steps, the Transformer's architecture is worth the added complexity.
 
 ---
 
